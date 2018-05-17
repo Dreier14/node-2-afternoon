@@ -12,11 +12,11 @@ massive(process.env.CONNECTION_STRING).then(database => {
 });
 
 app.post('/api/product', products_controller.create);
-app.get('/api/product', products_controller.getAll);
+app.get('/api/products', products_controller.getAll);
 app.get('/api/product/:id', products_controller.getOne);
 app.put('/api/product/:id', products_controller.update);
 app.delete('/api/product/:id', products_controller.delete);
 
-const PORT = 4000
+const PORT = 3000
 app.listen(PORT, () => { console.log('Server listening on port ' + PORT );
 })
