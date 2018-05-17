@@ -1,0 +1,1 @@
+insert into products (name, description, price, image_url);
